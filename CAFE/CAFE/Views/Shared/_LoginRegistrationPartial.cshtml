@@ -1,0 +1,327 @@
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="container">
+    <!-- Секция "О нас" -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">О нас</h2>
+        <div class="about-content">
+            <p>
+                Добро пожаловать в наш каталог уличных кафе! Мы — команда энтузиастов, 
+                влюбленных в культуру городского кофе и уютную атмосферу уличных кафе. 
+                Наша миссия — помочь вам открыть для себя лучшие места города, где можно 
+                насладиться ароматным кофе, вкусными десертами и приятной компанией.
+            </p>
+            <p>
+                Мы тщательно отбираем каждое кафе в нашем каталоге, оценивая качество напитков, 
+                сервис, атмосферу и уникальность заведения. Независимо от того, ищете ли вы 
+                тихое место для работы, романтический уголок для свидания или живое заведение 
+                для встречи с друзьями — у нас вы найдете идеальный вариант!
+            </p>
+        </div>
+    </section>
+
+    <!-- Секция "Услуги" -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="services-container">
+            <button class="arrow arrow-left">←</button>
+            <div class="services-wrapper">
+                <div class="service-card">
+                    <img src="/images/service1.jpg" alt="Подборка кафе">
+                    <div class="service-card-content">
+                        <h3>Индивидуальная подборка</h3>
+                        <p>Мы поможем вам найти идеальное кафе, учитывая ваши предпочтения: 
+                        от типа кухни до атмосферы и ценовой категории.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="/images/service2.jpg" alt="Отзывы">
+                    <div class="service-card-content">
+                        <h3>Честные отзывы</h3>
+                        <p>Читайте реальные отзывы посетителей и делитесь своим опытом. 
+                        Наше сообщество ценит честность и открытость.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="/images/service3.jpg" alt="Бронирование">
+                    <div class="service-card-content">
+                        <h3>Онлайн бронирование</h3>
+                        <p>Забронируйте столик в понравившемся кафе прямо через наш сайт. 
+                        Быстро, удобно и без лишних звонков.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="/images/service4.jpg" alt="Акции">
+                    <div class="service-card-content">
+                        <h3>Специальные предложения</h3>
+                        <p>Узнавайте первыми об акциях, скидках и специальных мероприятиях 
+                        в лучших кафе города.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="/images/service5.jpg" alt="Карта">
+                    <div class="service-card-content">
+                        <h3>Интерактивная карта</h3>
+                        <p>Найдите кафе рядом с вами с помощью нашей удобной интерактивной 
+                        карты с фильтрами и маршрутами.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="/images/service6.jpg" alt="События">
+                    <div class="service-card-content">
+                        <h3>Календарь событий</h3>
+                        <p>Следите за мастер-классами, концертами и другими интересными 
+                        событиями в кафе города.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow arrow-right">→</button>
+        </div>
+    </section>
+
+    <!-- Секция "Контакты" -->
+    <section id="contacts" class="contacts-section">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Адрес</h3>
+                        <p>г. Тирасполь, ул. Центральная, 123<br>Торговый центр "Город", 2 этаж</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Телефон</h3>
+                        <p>+373 (533) 12-34-56<br>+373 (778) 98-76-54</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>info@cafeguide.md<br>support@cafeguide.md</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Режим работы</h3>
+                        <p>Понедельник - Пятница: 09:00 - 21:00<br>Суббота - Воскресенье: 10:00 - 20:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.8!2d29.6!3d46.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDQ4JzAwLjAiTiAyOcKwMzYnMDAuMCJF!5e0!3m2!1sru!2s!4v1234567890!5m2!1sru!2s" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Написать сообщение" -->
+    <section class="message-section">
+        <h2 class="section-title">Напишите нам</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 2rem;">
+            Есть вопросы или предложения? Мы всегда рады обратной связи!
+        </p>
+        <form class="message-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Ваше имя *</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+373 (XXX) XX-XX-XX">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Сообщение *</label>
+                <textarea id="message" name="message" required placeholder="Напишите ваше сообщение..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i> Отправить сообщение
+            </button>
+        </form>
+    </section>
+</div>
+
+@section Scripts {
+    <script>
+        // Обработка формы обратной связи
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+}
+<!-- Оверлей для закрытия формы -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Контейнер формы -->
+<div class="form-container" id="form-container">
+    <button class="close-btn" id="close-form">&times;</button>
+    
+    <!-- Переключатель между входом и регистрацией -->
+    <div class="form-toggle">
+        <button class="toggle-btn active" id="login-toggle">Вход</button>
+        <button class="toggle-btn" id="register-toggle">Регистрация</button>
+    </div>
+    
+    <!-- Форма входа -->
+    <form class="auth-form active" id="login-form">
+        <h2>Добро пожаловать!</h2>
+        <p class="form-subtitle">Войдите в свой аккаунт</p>
+        
+        <div class="input-group">
+            <label for="login-email">
+                <i class="fas fa-envelope"></i>
+            </label>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <span class="input-label">Email</span>
+        </div>
+        
+        <div class="input-group">
+            <label for="login-password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" id="login-password" placeholder="Пароль" required>
+            <span class="input-label">Пароль</span>
+        </div>
+        
+        <div class="form-options">
+            <label class="remember-me">
+                <input type="checkbox" id="remember">
+                <span>Запомнить меня</span>
+            </label>
+            <a href="#" class="forgot-password">Забыли пароль?</a>
+        </div>
+        
+        <div id="login-error-messages" class="error-messages"></div>
+        
+        <button type="submit" class="submit-btn">
+            <i class="fas fa-sign-in-alt"></i> Войти
+        </button>
+        
+        <div class="social-login">
+            <p>Или войдите через:</p>
+            <div class="social-buttons">
+                <button type="button" class="social-btn google">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button type="button" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button type="button" class="social-btn vk">
+                    <i class="fab fa-vk"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    
+    <!-- Форма регистрации -->
+    <form class="auth-form" id="register-form">
+        <h2>Создать аккаунт</h2>
+        <p class="form-subtitle">Присоединяйтесь к нам!</p>
+        
+        <div class="input-group">
+            <label for="register-name">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" id="register-name" placeholder="Имя" required>
+            <span class="input-label">Имя</span>
+        </div>
+        
+        <div class="input-group">
+            <label for="register-email">
+                <i class="fas fa-envelope"></i>
+            </label>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <span class="input-label">Email</span>
+        </div>
+        
+        <div class="input-group">
+            <label for="register-phone">
+                <i class="fas fa-phone"></i>
+            </label>
+            <input type="tel" id="register-phone" placeholder="Телефон">
+            <span class="input-label">Телефон (необязательно)</span>
+        </div>
+        
+        <div class="input-group">
+            <label for="register-password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" id="register-password" placeholder="Пароль" required>
+            <span class="input-label">Пароль</span>
+        </div>
+        
+        <div class="input-group">
+            <label for="register-confirm-password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" id="register-confirm-password" placeholder="Подтвердите пароль" required>
+            <span class="input-label">Подтвердите пароль</span>
+        </div>
+        
+        <label class="terms-checkbox">
+            <input type="checkbox" id="terms" required>
+            <span>Я согласен с <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a></span>
+        </label>
+        
+        <div id="register-error-messages" class="error-messages"></div>
+        
+        <button type="submit" class="submit-btn">
+            <i class="fas fa-user-plus"></i> Зарегистрироваться
+        </button>
+        
+        <div class="social-login">
+            <p>Или зарегистрируйтесь через:</p>
+            <div class="social-buttons">
+                <button type="button" class="social-btn google">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button type="button" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button type="button" class="social-btn vk">
+                    <i class="fab fa-vk"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

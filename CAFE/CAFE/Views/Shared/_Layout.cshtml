@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Каталог уличных кафе города</title>
+    <link rel="stylesheet" href="~/css/shared.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login_registration.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+<!-- Шапка сайта -->
+<header class="header-container">
+    <div class="header-top">
+        <a href="@Url.Action("Index", "Home")" class="logo">☕ Café Guide</a>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="@Url.Action("Catalog", "Home")">Каталог</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="button-header">
+            <button class="btn-login" id="btn-login-open">Войти</button>
+            <button class="btn-register" id="btn-register-open">Регистрация</button>
+        </div>
+    </div>
+</header>
+
+<!-- Форма входа/регистрации -->
+@await Html.PartialAsync("_LoginRegistrationPartial")
+
+<!-- Основной контент -->
+<main>
+    @RenderBody()
+</main>
+
+<!-- Подвал сайта -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Мы создали этот каталог, чтобы помочь вам найти идеальное место для отдыха. Исследуйте уличные кафе города и наслаждайтесь каждым моментом!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul class="footer-menu">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="@Url.Action("Catalog", "Home")">Каталог кафе</a></li>
+                    <li><a href="#services">Наши услуги</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> г. Тирасполь, ул. Центральная, 123</p>
+                <p><i class="fas fa-phone"></i> +373 (533) 12-34-56</p>
+                <p><i class="fas fa-envelope"></i> info@cafeguide.md</p>
+                <p><i class="fas fa-clock"></i> Пн-Вс: 09:00 - 21:00</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Café Guide. Все права защищены. Создано с ❤️ для любителей кофе</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="~/js/shared_script.js" asp-append-version="true"></script>
+<script src="~/js/login_registration_script.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
